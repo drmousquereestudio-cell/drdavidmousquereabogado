@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr. David Rodrigo Mousquere — Abogado</title>
+  <meta name="description" content="Abogado y Martillero Público en Oberá, Misiones. Patrocinio en civil y comercial, laboral, familia, penal; aduanero, tributario y migraciones. Turnos por WhatsApp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --line: #e2e8f0;
+      --brand: #0ea5a1; /* Cambiá este valor para adaptar a tu logo */
+      --brand-ink: #064e3b;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+    body { font-family: Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.6; }
+    a { color: var(--brand-ink); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+    header { position: sticky; top: 0; backdrop-filter: blur(8px); background: rgba(255,255,255,.85); border-bottom: 1px solid var(--line); z-index: 10; }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; gap: 16px; }
+    .brand { display: grid; }
+    .brand small { color: var(--muted); letter-spacing: .08em; text-transform: uppercase; }
+    .brand strong { font-weight: 700; }
+    nav a { padding: 8px 12px; border-radius: 12px; }
+    nav a:hover { background: #f1f5f9; text-decoration: none; }
+    .cta { display: flex; gap: 8px; flex-wrap: wrap; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; border-radius: 14px; padding: 10px 14px; font-weight: 600; border: 1px solid var(--line); background: var(--card); }
+    .btn-primary { background: var(--brand); color: #fff; border-color: var(--brand); }
+    .btn-primary:hover { opacity: .9; }
+    .btn:hover { background: #fff; }
+    .hero { padding: 48px 0; }
+    .grid { display: grid; gap: 20px; }
+    @media (min-width: 880px) { .grid-3 { grid-template-columns: 2fr 1fr; } .grid-2 { grid-template-columns: 1fr 1fr; } .grid-3col { grid-template-columns: repeat(3, 1fr); } }
+    h1 { font-size: clamp(28px, 5vw, 46px); margin: 0 0 6px 0; }
+    h2 { font-size: clamp(20px, 3.2vw, 28px); margin: 0 0 6px 0; }
+    h3 { font-size: 18px; margin: 0 0 6px 0; }
+    p.lead { color: var(--muted); font-size: 18px; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
+    ul { padding-left: 18px; margin: 6px 0; }
+    .chip { display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; background: #e2e8f0; border-radius: 999px; font-size: 14px; color: #0f172a; }
+    footer { border-top: 1px solid var(--line); background: rgba(255,255,255,.8); }
+    .muted { color: var(--muted); }
+    .kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace; background:#e2e8f0; border:1px solid #cbd5e1; border-radius:6px; padding:2px 6px; font-size:12px; }
+    form .row { display: grid; grid-template-columns: 1fr; gap: 12px; }
+    @media (min-width: 720px) { form .row.cols-2 { grid-template-columns: 1fr 1fr; } }
+    input, textarea { width: 100%; padding: 12px 14px; border: 1px solid var(--line); border-radius: 12px; font: inherit; }
+    textarea { min-height: 120px; resize: vertical; }
+    .note { font-size: 14px; color: var(--muted); }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "Person", "name": "Dr. David Rodrigo Mousquere", "jobTitle": "Abogado, Martillero Público y Corredor de Comercio", "email": "mailto:drmousquere.estudio@gmail.com", "telephone": "+54 9 3755 67-1017", "url": "", "address": {"@type": "PostalAddress", "streetAddress": "Calle Larrea N.º 706, esq. Santiago del Estero", "addressLocality": "Oberá", "addressRegion": "Misiones", "addressCountry": "AR"}, "sameAs": ["https://wa.me/543755671017?text=Hola%20Dr.%20Mousquere%2C%20quisiera%20hacer%20una%20consulta.", "mailto:drmousquere.estudio@gmail.com", "https://www.google.com/maps?q=Calle+Larrea+706,+Ober%C3%A1,+Misiones,+Argentina"]}
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <small>Estudio Jurídico</small>
+        <strong>Dr. David Mousquere</strong>
+      </div>
+      <nav class="hide-mobile">
+        <a href="#formacion">Formación</a>
+        <a href="#matriculas">Matrículas</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#areas">Áreas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://wa.me/543755671017?text=Hola%20Dr.%20Mousquere%2C%20quisiera%20hacer%20una%20consulta.">WhatsApp</a>
+        <a class="btn" href="cv.pdf" download>Descargar CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero grid grid-3">
+      <div>
+        <h1>Dr. David Rodrigo Mousquere</h1>
+        <p class="lead">Abogado · Martillero Público y Corredor de Comercio</p>
+        <p>Abogado matriculado en Misiones y con matrícula federal. Experiencia en patrocinio y litigación en civil y comercial, laboral, familia y penal; tramitación digital (SIGED), producción de prueba y negociación de acuerdos. Práctica en materia federal (aduanas, tributario y migraciones). Martillero y Corredor con experiencia en tasaciones y gestiones registrales. Emprendedor: co‑propietario de Buonna Terra Inmobiliaria (Oberá) y abogado titular del Estudio Jurídico‑Contable Mousquere &amp; Cuadra (Oberá).</p>
+        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:10px;">
+          <span class="chip">📍 Oberá, Misiones — Larrea 706 (esq. Santiago del Estero)</span>
+          <span class="chip">CUIT 20-37116611-5</span>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:14px;">
+          <a class="btn btn-primary" href="https://wa.me/543755671017?text=Hola%20Dr.%20Mousquere%2C%20quisiera%20hacer%20una%20consulta.">Escribirme por WhatsApp</a>
+          <a class="btn" href="mailto:drmousquere.estudio@gmail.com">Enviar Email</a>
+          <a class="btn" href="https://www.google.com/maps?q=Calle+Larrea+706,+Ober%C3%A1,+Misiones,+Argentina">Cómo llegar</a>
+          <a class="btn" href="cv.pdf" download>Descargar CV (PDF)</a>
+        </div>
+      </div>
+      <aside class="card">
+        <h3>Contacto</h3>
+        <ul>
+          <li>☎️ <a href="tel:+543755671017">+54 9 3755 67‑1017</a></li>
+          <li>☎️ (03755) 424‑832</li>
+          <li>✉️ <a href="mailto:drmousquere.estudio@gmail.com">drmousquere.estudio@gmail.com</a></li>
+          <li>🏢 <a href="https://www.google.com/maps?q=Calle+Larrea+706,+Ober%C3%A1,+Misiones,+Argentina">Calle Larrea N.º 706, Oberá, Misiones</a></li>
+        </ul>
+        <p class="note">Atención con turno previo por WhatsApp o Email.</p>
+      </aside>
+    </section>
+
+    <section id="formacion" class="grid grid-2" style="margin-bottom:24px;">
+      <div class="card">
+        <h2>Formación académica</h2>
+        <h3>Abogacía — Universidad Nacional del Nordeste (UNNE)</h3>
+        <p class="muted">Finalización: 13/07/2017 · Título: 10/07/2018 — Corrientes, Argentina</p>
+        <ul><li>Facultad de Derecho y Ciencias Sociales y Políticas.</li></ul>
+      </div>
+      <div class="card">
+        <h2 style="opacity:0;">.</h2>
+        <h3>Martillero Público y Corredor de Comercio — UNNE</h3>
+        <p class="muted">Finalización: 21/12/2019 · Título: 05/02/2021 — Corrientes, Argentina</p>
+        <ul><li>Formación en subastas, corretaje y registración.</li></ul>
+      </div>
+    </section>
+
+    <section id="matriculas" class="grid grid-3col" style="margin-bottom:24px;">
+      <div class="card">
+        <h2>Matrículas y habilitaciones</h2>
+        <p><strong>C.A.D.E.M.I.S. (Misiones):</strong> Matrícula Profesional Prov. N.º 4773, T. XVI, F. 73.</p>
+        <p><strong>Procurador — S.T.J.P.M.:</strong> Matrícula N.º 3705, F. 84, L. II.</p>
+        <p><strong>Matrícula Profesional Federal:</strong> T. 125, F. 656.</p>
+      </div>
+    </section>
+
+    <section id="experiencia" class="grid grid-2" style="margin-bottom:24px;">
+      <div class="card">
+        <h2>Experiencia profesional</h2>
+        <h3>Titular — Estudio Jurídico‑Contable Mousquere &amp; Cuadra (Oberá, Misiones)</h3>
+        <p class="muted">Actual</p>
+        <ul>
+          <li>Dirección jurídica integral; litigación, asesoramiento preventivo y compliance documental.</li>
+          <li>Tramitaciones ante organismos provinciales y federales; gestión SIGED y oficios electrónicos.</li>
+          <li>Actuaciones judiciales y/o extrajudiciales.</li>
+        </ul>
+        <p class="note">Larrea N.º 706 (esq. Santiago del Estero), Oberá (3360) · WhatsApp/Tel.: +54 9 3755 67‑1017 · Tel. fijo: (03755) 424‑832 · Email: drmousquere.estudio@gmail.com</p>
+
+        <h3>Co‑propietario — Buonna Terra Inmobiliaria (Oberá, Misiones)</h3>
+        <p class="muted">Actual</p>
+        <ul>
+          <li>Comercialización y consultoría legal‑registral en bienes raíces.</li>
+          <li>Análisis documental, contratos, tasaciones y acompañamiento a inversores/desarrollos.</li>
+          <li>Actuaciones judiciales y/o extrajudiciales vinculadas a la actividad.</li>
+        </ul>
+        <p class="note">México 355, Oberá (3360) · WhatsApp/Tel.: +54 9 3755 643705 / +54 3755 541103 · Email: info@buonnaterra.com</p>
+
+        <h3>Titular — Estudio Jurídico Dr. David Mousquere (Oberá, Misiones)</h3>
+        <p class="muted">Actual</p>
+        <ul><li>Patrocinio en civil, laboral, familia y penal; oficios Ley 22.172; trámites registrales; acuerdos extrajudiciales.</li></ul>
+        <p class="note">Larrea N.º 706 (esq. Santiago del Estero), Oberá (3360) · WhatsApp/Tel.: +54 9 3755 67‑1017 · Tel. fijo: (03755) 424‑832 · Email: drmousquere.estudio@gmail.com</p>
+      </div>
+      <div class="card">
+        <h2>Áreas de práctica y expertise</h2>
+        <ul>
+          <li>Federal / Aduanero: sumarios e infracciones aduaneras, impugnaciones y recursos (DGA / Juzgados Federales).</li>
+          <li>Tributario nacional (AFIP / ARCA): determinaciones, planes, fiscalizaciones y ejecuciones.</li>
+          <li>Tributario provincial Misiones (ATM / Rentas): presentaciones, recursos y juicios.</li>
+          <li>Migraciones: radicaciones, renovaciones e intimaciones.</li>
+          <li>Consumo y bancario; contratos; sucesorios y ejecuciones.</li>
+          <li>Tasaciones y gestión registral inmobiliaria.</li>
+        </ul>
+        <p class="note">Plataformas y herramientas: SIGED, notificaciones y oficios electrónicos.</p>
+      </div>
+    </section>
+
+    <section id="idiomas" class="grid grid-2" style="margin-bottom:24px;">
+      <div class="card">
+        <h2>Idiomas</h2>
+        <p><strong>Español:</strong> nativo.</p>
+        <p><strong>Inglés:</strong> manejo operativo profesional.</p>
+      </div>
+      <div class="card">
+        <h2>Turnos y contacto</h2>
+        <form id="contacto-form" onsubmit="return enviarMensaje(event)">
+          <div class="row cols-2">
+            <input required name="nombre" placeholder="Nombre y apellido">
+            <input name="telefono" placeholder="Teléfono (opcional)">
+          </div>
+          <div class="row">
+            <input name="email" type="email" placeholder="Email (opcional)">
+            <textarea required name="mensaje" placeholder="Escriba su consulta..."></textarea>
+          </div>
+          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:8px;">
+            <button class="btn btn-primary" type="submit">Enviar por WhatsApp</button>
+            <a class="btn" href="mailto:drmousquere.estudio@gmail.com?subject=Consulta%20web%20Dr.%20Mousquere" id="mailto">Enviar por Email</a>
+          </div>
+          <p class="note">El botón principal abre WhatsApp con su consulta pre‑cargada. También puede enviar por email.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="text-align:center; padding:14px 0; font-size:14px; color:var(--muted);">
+      © 2025 Estudio Jurídico Dr. David Mousquere — Oberá, Misiones · Todos los derechos reservados
+    </div>
+  </footer>
+
+  <script>
+    function enviarMensaje(e) {
+      e.preventDefault();
+      const f = document.getElementById('contacto-form');
+      const nombre = encodeURIComponent(f.nombre.value.trim());
+      const tel = encodeURIComponent(f.telefono.value.trim());
+      const email = encodeURIComponent(f.email.value.trim());
+      const mensaje = encodeURIComponent(f.mensaje.value.trim());
+      const texto = `Hola Dr. Mousquere, soy ${decodeURIComponent(nombre)}. Tel: ${decodeURIComponent(tel)}. Email: ${decodeURIComponent(email)}. Consulta: ${decodeURIComponent(mensaje)}`;
+      const url = `https://wa.me/543755671017?text=${encodeURIComponent(texto)}`;
+      window.open(url, '_blank');
+      return false;
+    }
+  </script>
+</body>
+</html>
